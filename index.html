@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Moral Compass Tracker</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#2196f3">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="title">Moral Compass Tracker</div>
+    <div class="score" title="Score d'intégrité du jour">—</div>
+  </header>
+  <main class="container">
+    <section id="home" class="grid"></section>
+    <section id="logs" class="grid" style="display:none"></section>
+    <section id="stats" class="grid" style="display:none"></section>
+    <section id="challenges" class="grid" style="display:none"></section>
+    <div class="footer-space"></div>
+  </main>
+  <nav id="nav" class="navbar">
+    <button class="active" data-tab="home">Accueil</button>
+    <button data-tab="logs">Journal</button>
+    <button data-tab="stats">Stats</button>
+    <button data-tab="challenges">Défis</button>
+  </nav>
+  <script src="app.js"></script>
+</body>
+</html>
